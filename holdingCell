@@ -1,0 +1,45 @@
+PERSON TABLE
+#1
+CREATE TABLE person (
+  id SERIAL,
+  name VARCHAR,
+  age INT,
+  height INT,
+  city VARCHAR,
+  favorite_color VARCHAR
+  
+)
+#2
+INSERT INTO person (name, age, height, city, favorite_color)
+VALUES ('Aaron', 32, 200, 'Lindon', 'blue'),
+('Doge', 10, 50, 'Lindon', 'brown'),
+('Bigfoot', 125, 325, 'Wilderness', 'black'),
+('Anabell', 5000, 60, 'Mirrors', 'red'),
+('Bob', 65, 175, 'Bobville', 'green');
+#3
+SELECT * FROM person ORDER BY height desc
+#4
+SELECT * FROM person ORDER BY height asc
+#5
+SELECT * FROM person ORDER BY age desc
+#6
+SELECT * FROM person WHERE age > 20
+#7
+SELECT * FROM person WHERE age = 18
+
+ORDER TABLE
+#1
+CREATE TABLE orders (
+  order_id SERIAL,
+  person_id INT,
+  product_name VARCHAR,
+  product_price INT,
+  quantity INT
+)
+#2
+INSERT INTO orders (order_id, person_id, product_name, product_price, quantity)
+VALUES ()
+
+ARTIST TABLE 
+#1
+INSERT INTO artist(artist_id, name) VALUES (276, 'A'), (277, 'B'), (278, 'C')
